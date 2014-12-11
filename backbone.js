@@ -686,7 +686,7 @@
         if (attrs instanceof Model) {
           id = model = attrs;
         } else {
-          id = attrs[targetModel.prototype.idAttribute || 'id'];
+          id = attrs[targetModel.prototype.idAttribute || this.idAttribute || 'id'];
         }
 
         // If a duplicate is found, prevent it from being added and
